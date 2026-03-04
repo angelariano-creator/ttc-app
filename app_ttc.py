@@ -1117,7 +1117,7 @@ else:
                     with c2:
                         nuevo_email = st.text_input("Correo Electrónico:")
                         nueva_ciudad = st.text_input("Ciudad de Residencia:")
-                        nuevo_estado = st.selectbox("Estado Inicial:", ["RESERVADO", "SEPARADO"])
+                        nuevo_estado = st.selectbox("Estado Inicial:", ["Reservado", "Disponible"])
 
                     st.markdown("---")
                     st.markdown("#### 💰 Condiciones Comerciales")
@@ -1578,4 +1578,5 @@ else:
                         st.error(f"Error en PDF: {e}")
 
                 else:
+
                     st.warning("Cargue la base de datos para ver el informe.")
