@@ -780,7 +780,7 @@ else:
                                 with col_sel:
                                     cuotas_pactadas = st.number_input(
                                         "Cuotas a programar:", 
-                                        min_value=1, max_value=12, 
+                                        min_value=1, max_value=18, 
                                         value=int(cliente.get("NUMERO_CUOTAS", 1)),
                                         key="num_cuotas_selector"
                                     )
@@ -1791,3 +1791,4 @@ else:
                 else:
 
                     st.warning("Cargue la base de datos para ver el informe.")
+
